@@ -3,12 +3,9 @@
 
 def key_for_min_value(name_hash)
   new_value = 0
-  new_key = ""
+  #new_key = ""
   name_hash.collect do |key, value|
     value < new_value
-      new_value = value
-      new_key =  key
-    end
+      key
   end
-  
 end
